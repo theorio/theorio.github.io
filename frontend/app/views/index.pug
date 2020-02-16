@@ -3,15 +3,16 @@ doctype html
 html(lang="pt-br" class="no-js")
 	include ./helpers/head.pug
 	body
-		include ./includes/navbar.pug
 		include ./includes/header.pug
 		main(id="main" role="main")
-			section(id="portfolio" class="page-section")
+			.wrapper
+				h2.title Quem Somos
+
+				img(src="images/piscina.jpg" alt="piscina" class="limpando-piscina")
+
+				p Atuando com a prestação de serviços na área de limpeza e conservação (ASG), portaria, recepção, zeladoria, controle de acesso, guarda vidas e outros de apoio administrativo, a Theo Rio Prestadora de  Serviços se encontra consolidada no mercado, buscando sempre o aperfeiçoamento de suas atividades e o constante crescimento.
+				p A Theo Rio está plenamente capacitada para atender clientes de condomínios e clubes.
+				p Comprove a qualidade de nossos trabalhos! Um grande serviço ao seu alcance, com todo o controle de qualidade que os dias atuais exigem. Seja qual for a sua necessidade, estamos capacitados para atendê-la, de maneira ágil e eficiente.
+
 			
-			section(id="services" class="page-section")
-			
-			section(id="about" class="page-section")
-			
-			section(id="contact" class="page-section")
-				address
 		include ./includes/footer.pug

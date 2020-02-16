@@ -69,10 +69,10 @@ p {
     text-align: center;
 }
 
-h3 {
-    font-size: em(36px);
+h2 {
+    font-size: em(28px);
     font-weight: 600;
-    color: $preto2;
+    color: $vermelho;
     
     @media (min-width: 1px) and (max-width: 480px) {
         font-size: em(32px);

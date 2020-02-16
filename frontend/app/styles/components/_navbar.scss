@@ -1,0 +1,53 @@
+#main-menu {
+    
+
+    ul {
+        margin: 0;
+        padding: 71px 0 0;
+        list-style: none;
+        text-align: right;
+
+        li {
+            float: none;
+            display: inline-block;
+            
+            &:nth-child(1) {
+                float: left;
+            }
+
+            &:nth-child(2) {
+                float: left;
+            }
+
+            &:nth-child(3) {
+                float: right;
+            }
+
+            &:nth-child(4) {
+                float: right;
+            }
+
+            a {
+                font-family: 'Lato';
+                text-transform: uppercase;
+                display: block;
+                color: $azul;
+                transition: all .3s ease-in-out;
+                
+                @media (min-width: 1024px) {
+                    padding: 10px 20px;
+                    font-size: em(20px);
+                }
+                
+                @media (max-width: 1023px) {
+                    padding: 10px 10px;
+                    font-size: em(16px);
+                }
+
+                &:hover {
+                    color: $vermelho;
+                }
+            }
+        }
+    }
+}

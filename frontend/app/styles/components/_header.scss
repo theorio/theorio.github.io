@@ -1,0 +1,33 @@
+#header {
+    width: 100%;
+    position: relative;
+    float: left;
+
+    #logo {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        content: 0;
+        
+        @media (min-width: 1024px) {
+            margin-left: -115px;
+            width: 230px;
+            height: 122px;
+        }
+
+        @media (max-width: 1023px) {
+            margin-left: -100px;
+            width: 200px;
+            height: 170px;
+        }
+
+        a {
+            display: block;
+            font-size: 0;
+            text-decoration: none;
+            img {
+                display: block;
+            }
+        }
+    }
+}
