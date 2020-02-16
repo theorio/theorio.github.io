@@ -1,0 +1,6 @@
+.vagrant/
+.vscode
+frontend/.tmp/
+frontend/dist/
+frontend/.sass-cache/
+frontend/node_modules/

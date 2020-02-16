@@ -39,7 +39,60 @@
     <script defer src="scripts/modernizr.min.js"></script>
     <link rel="manifest" href="manifest.json">
   </head>
-  <body class="construcao">
-    <main id="main" role="main"><img src="images/construcao.png" alt="Em construção, aguarde novidades" title="Em construção, aguarde novidades"></main>
+  <body>
+    <header id="header">
+      <div class="wrapper">
+        <h1 id="logo"><a href="" title="THEO RIO - SOLUÇÃO EM LIMPEZA">THEO RIO - SOLUÇÃO EM LIMPEZA<img src="images/logo.svg" alt="THEO RIO - SOLUÇÃO EM LIMPEZA"></a></h1>
+        <button class="hamburger hamburger--collapse" aria-label="Abrir Menu" id="menu-bar" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+        <nav id="main-menu">
+          <ul>
+            <li><a href="index.html" titile="Quem Somos">QUEM SOMOS</a></li>
+            <li><a href="servicos.html" title="Serviços">SERVIÇOS</a></li>
+            <li><a href="contato.html" title="Contato">CONTATO</a></li>
+            <li><a href="produtos.html" title="Produtos">PRODUTOS</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main" role="main">
+      <div class="wrapper">
+        <h2 class="title">Quem Somos</h2><img class="limpando-piscina" src="images/piscina.jpg" alt="piscina">
+        <p>Atuando com a prestação de serviços na área de limpeza e conservação (ASG), portaria, recepção, zeladoria, controle de acesso, guarda vidas e outros de apoio administrativo, a Theo Rio Prestadora de  Serviços se encontra consolidada no mercado, buscando sempre o aperfeiçoamento de suas atividades e o constante crescimento.</p>
+        <p>A Theo Rio está plenamente capacitada para atender clientes de condomínios e clubes.</p>
+        <p>Comprove a qualidade de nossos trabalhos! Um grande serviço ao seu alcance, com todo o controle de qualidade que os dias atuais exigem. Seja qual for a sua necessidade, estamos capacitados para atendê-la, de maneira ágil e eficiente.</p>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="wrapper"><span class="copyright">© Copyright - 2020 Todos os direitos reservados à Theo Rio</span><span class="by">Produzido por: &nbsp;<a href="marllonpanisset.github.io" target="_blank" title="Marllon Panisset">Marllon Panisset</a></span></div>
+    </footer>
+    <div class="loading"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+          window.addEventListener('load', function() {
+              navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+              // Registration was successful
+              console.log('ServiceWorker registration successful with scope: ', registration.scope);
+              }, function(err) {
+              // registration failed :(
+              console.log('ServiceWorker registration failed: ', err);
+              }).catch(function(err) {
+              console.log(err)
+              });
+          });
+      } else {
+          console.log('service worker is not supported');
+      }
+      
+    </script>
+    <script defer src="scripts/jquery.min.js"></script>
+    <script defer src="scripts/main.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158648044-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'UA-158648044-1');
+    </script>
   </body>
 </html>
